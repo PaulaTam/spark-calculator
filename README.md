@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Spark Calculator
+This is a project to create calculators for various gacha games to track how many rolls/pulls a person has + guide to any additional funds that may be unclaimed. This way, a person can track how close they are to sparking a character or reaching hard pity/guaranteed pity.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TERMS YOU MAY NOT KNOW
+"Pity" refers to the "Pity System" in gacha games, which is basically a safety net to guarantee the player that they would get a featured character/unit at a certain number of rolls/pulls. Different games have different pity systems, so some terms may vary.
 
-## Available Scripts
+"Hard Pity" usually refers to the maximum number of rolls needed to get a banner/high rarity character. "Guaranteed Pity" usually refers to the amount of rolls needed to guarantee the character you want, though this is not applicable to all games.
 
-In the project directory, you can run:
+"Spark" comes from the gacha game Granblue Fantasy when they implemented a system that allowed a player to choose the character they want (from a list) after 300 rolls. This was implemented because of someone literally spending *thousands* of dollars and still failing to get the character they wanted. So thus, this method of a pity is referred as the "Spark System".
 
-### `npm start`
+# Roll/Pull Count
+If the game uses a pity system, the total amount of rolls would be displayed out of the hard pity count and/or guaranteed pity count if applicable. (e.g. If the hard pity count is 100, then the amount of rolls will be displayed as "xxx/100".)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+If the game uses a spark system, the total amount of rolls would be out of the amount of rolls needed to spark. (e.g. If the total amount of rolls needed to spark is 300, then the amount of rolls will be displayed as "xxx/300".)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Farming Guide/Tracker (?)
+Depending on the game, there may be easy ways to gain some currency (usually these are missions you can only do once).
 
-### `npm test`
+Underneath the calculator would be a checklist of ways to get free currency/rolls with a "Claimed" option to see what you have already claimed. The amount of currency/rolls unclaimed will be a cumulative total included as a separate value in the calculator for people to see the *possible* amount of total rolls they may have after farming. (Please not that this does **not** take into account the amount of time it takes to farm.)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Any currency/rolls gained from Login/Dailies depends on the game and may not be included if there is too much variance in the amount gained per day.
 
-### `npm run build`
+Any currency/rolls gained from in-game events may or may not be included depending on how consistent the rewards are each event. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Any currency/rolls gained from other sources (e.g. Maintenance Compensation, IRL Events, Freebies) are not included.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Additional Info
+As I definitely don't know every single gacha game out there, this project will start off with calculators for Granblue Fantasy, Genshin Impact, and Project Sekai (EN). (These are some of the games I currently play and also need a calculator for.)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Other games that may be implemented in the future:
+Ensemble Stars (JP)
+Idolish7 (JP)
+Tears of Themis (EN)
+Cookie Run Kingdom (EN)
+Arknights (EN)
 
-### `npm run eject`
+Any questions/comments? Contact me on Discord: Yaron#5654
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you!
