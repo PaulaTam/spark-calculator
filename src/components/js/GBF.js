@@ -29,8 +29,8 @@ const GBF = () => {
 
     return (
         <>
-        <Container >
-            <Row xs="auto" md="3" lg="3">
+        <Container>
+            <Row xs="auto" md="4" lg="3">
                 <Col>
                     <label className="no-wrap" name="crystals" htmlFor="crystals">Crystals:</label>
                     <input className="input-sm form-control" min="0" max="999999" step="50" type="number" id="currency" value={crystals} onChange={e => setCrystals(e.target.value)}></input>
@@ -44,13 +44,13 @@ const GBF = () => {
                     <input className="input-sm form-control" min="0" max="999999" type="number" id="ticket" value={multiTickets} onChange={e => setMultiTickets(e.target.value)}></input>
                 </Col>
             </Row>
-            <Row  xs="auto" md="3" lg="3">
+            <Row  xs="auto" md="4" lg="3">
                 <Col>
                     <label className="no-wrap" id="totalRolls" name="totalRolls" htmlFor="totalRolls">Total Rolls:</label>
                     <input disabled className="input-sm form-control" min="0" max="999999" type="text" value={totalRolls + "/300"}></input>
                 </Col>
             </Row>
-            <Row  xs="auto" md="3" lg="3">
+            <Row  xs="auto" md="4" lg="3">
                 <Col>
                     <label className="no-wrap" name="ebifry" htmlFor="ebifry">Ebifry Count:</label>
                     <input className="input-sm form-control" min="0" max="999" type="number" id="ebifry" value={ebifry} onChange={e => setEbifry(e.target.value)}></input>
