@@ -1,13 +1,18 @@
 import './App.css';
-import GBF from './components/js/GBF';
-import { Card } from 'react-bootstrap';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import CardGrid  from './components/js/CardGrid';
+import  GBF  from './components/js/GBF';
+
 
 function App() {
   return (
     <div className="App">
-      <Card>
-        <Card.Title>GBF Calculator</Card.Title>
-      </Card>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<CardGrid/>} />
+          <Route exact path="/gbf" element={<GBF/>} />
+        </Routes>
+      </Router>
     </div>
   );
 }
