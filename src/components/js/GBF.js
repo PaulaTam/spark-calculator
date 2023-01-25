@@ -1,7 +1,9 @@
+import '../css/GBF.css';
+import { FullPanel } from './Tabs.js';
 import React, { useEffect, useState } from 'react';
-import { Row, Col, Container } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
-const GBF = () => {
+const GBFCal = () => {
     //setting state for crystals, single tix, 10 tix values
     const [crystals, setCrystals] = useState('0');
     const [singleTickets, setSingleTickets] = useState('0');
@@ -29,7 +31,6 @@ const GBF = () => {
 
     return (
         <>
-        <Container>
             <Row xs="auto" md="4" lg="3">
                 <Col>
                     <label className="no-wrap" name="crystals" htmlFor="crystals">Crystals:</label>
@@ -60,8 +61,24 @@ const GBF = () => {
                     <input disabled className="input-sm form-control" min="0" max="999999" type="text" value={totalRolls + " + " + ebifry + " = " + totalWithEbifry + "/300"}></input>
                 </Col>
             </Row>
-        </Container>
         </>
+    )
+}
+
+const GBFGuide = () => {
+    return (
+        <>
+            <p>This is a place holder for now.</p>
+        </>
+    )
+}
+
+const GBF = () => {
+    return (
+        <FullPanel
+            calculator={ <GBFCal /> }
+            guide={ <GBFGuide />}
+        />
     )
 }
 
