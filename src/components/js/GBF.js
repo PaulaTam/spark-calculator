@@ -1,4 +1,3 @@
-import '../css/GBF.css';
 import { FullPanel } from './Tabs.js';
 import React, { useEffect, useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
@@ -30,7 +29,7 @@ const GBFCal = () => {
     }, [totalRolls, ebifry])
 
     return (
-        <>
+        <div id="items">
             <Row xs="auto" md="4" lg="3">
                 <Col>
                     <label name="crystals" htmlFor="crystals">Crystals:</label>
@@ -51,7 +50,7 @@ const GBFCal = () => {
                     <input disabled className="input-sm form-control" min="0" max="999999" type="text" value={totalRolls + "/300"} />
                 </Col>
             </Row>
-            <Row>Total Rolls if you use up all your Ebifry (from Premium Friday):</Row>
+            <Row id="extra">Total Rolls if you use up all your Ebifry (from Premium Friday):</Row>
             <Row  xs="auto" md="4" lg="3">
                 <Col>
                     <label name="ebifry" htmlFor="ebifry">Ebifry Count:</label>
@@ -62,7 +61,7 @@ const GBFCal = () => {
                     <input disabled className="input-sm form-control" min="0" max="999999" type="text" value={totalRolls + " + " + ebifry + " = " + totalWithEbifry + "/300"} />
                 </Col>
             </Row>
-        </>
+        </div>
     )
 }
 

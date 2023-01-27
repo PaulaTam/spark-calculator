@@ -26,7 +26,7 @@ const GenshinCal = () => {
 
     useEffect(() => {
         const total = ~~(
-            Math.min(Math.max(parseInt((dust, 10) / 75), 0), 5)
+            Math.min(Math.max((parseInt(dust, 10 / 75)), 0), 5)
             + (parseInt(glitter, 10) / 5)
         );
         setTotalWithBargain(total.toString());
@@ -40,7 +40,7 @@ const GenshinCal = () => {
     }, [totalRolls, totalWithBargain])
 
     return (
-        <>
+        <div id="items">
             <Row xs="auto" md="4" lg="3">
                 <Col>
                     <label name="primos" htmlFor="primos">Primogems:</label>
@@ -61,15 +61,15 @@ const GenshinCal = () => {
                     <input disabled className="input-sm form-control" min="0" max="999999" type="text" value={totalRolls + "/90"} />
                 </Col>
             </Row>
-            <Row>Total Rolls if you use up all your Stardust + Starglitter:</Row>
+            <Row id="extra">Total Rolls if you use up all your Stardust + Starglitter:</Row>
             <Row xs="auto" md="4" lg="3">
                 <Col>
                     <label name="dust" htmlFor="dust">Stardust:</label>
-                    <input className="input-sm form-control" min="0" max="9999999" step="75" type="number" id="shop" value={dust} onChange={e => setDust(e.target.value)} />
+                    <input className="input-sm form-control" min="0" max="9999999" step="10" type="number" id="shop" value={dust} onChange={e => setDust(e.target.value)} />
                 </Col>
                 <Col>
                     <label name="glitter" htmlFor="glitter">Starglitter:</label>
-                    <input className="input-sm form-control" min="0" max="9999999" step="15" type="number" id="shop" value={glitter} onChange={e => setGlitter(e.target.value)} />
+                    <input className="input-sm form-control" min="0" max="9999999" step="10" type="number" id="shop" value={glitter} onChange={e => setGlitter(e.target.value)} />
                 </Col>
             </Row>
             <Row xs="auto" md="4" lg="3">
@@ -82,7 +82,7 @@ const GenshinCal = () => {
                     <input disabled className="input-sm form-control" min="0" max="999999" type="text" value={totalOverall} />
                 </Col>
             </Row>
-        </>
+        </div>
     )
 }
 
