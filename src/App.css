@@ -3,11 +3,17 @@
 }
 
 .container {
+  margin-top: 2rem;
   padding: 1rem;
-  background-color: #faf0cd;
-  border-radius: 10px;
+  border-radius: 5px;
+  background-color: hsla(0, 100%, 90%, 0.3);
 }
 
-.no-wrap {
-  white-space: nowrap;
+#items > .row { /*row items*/
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#items > .row#extra { /*extra rows that just have text*/
+  justify-content: center;
 }
