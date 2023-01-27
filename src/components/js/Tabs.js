@@ -6,7 +6,7 @@ export const FullPanel = (props) => {
                 <Tab eventKey="calculator" title="Calculator" >
                     {props.calculator}
                 </Tab>
-                <Tab eventKey="guide" title="Crystal Guide">
+                <Tab eventKey="guide" title="Guide for Farming">
                     {props.guide}
                 </Tab>
         </Tabs>

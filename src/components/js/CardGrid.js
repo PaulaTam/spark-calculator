@@ -1,10 +1,11 @@
 import '../css/CardGrid.css';
-import { Card } from 'react-bootstrap';
+import { Card, Container } from 'react-bootstrap';
 
 const CardGrid = () => {
 
   const cardInfo = [
-    { link: "/gbf", title: "GBF calculator" }
+    { link: "/gbf", title: "GBF calculator" },
+    { link: "/genshin", title: "Genshin Calculator"},
   ];
 
   const renderCard = (card, index) => {
@@ -12,13 +13,17 @@ const CardGrid = () => {
       <Card style={{ width: '18rem' }} key={index} className="box">
         <Card.Body>
           <Card.Title>{card.title}</Card.Title>
-          <Card.Link href={card.link}>Go to calculator</Card.Link>
+          <Card.Link href={card.link}>Click Here</Card.Link>
         </Card.Body>
       </Card>
     )
   }
 
-  return (<div className="grid">{cardInfo.map(renderCard)}</div>);
+  return (
+    <>
+      {cardInfo.map(renderCard)}
+    </>
+    );
   
 };
 

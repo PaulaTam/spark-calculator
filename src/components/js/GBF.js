@@ -33,32 +33,33 @@ const GBFCal = () => {
         <>
             <Row xs="auto" md="4" lg="3">
                 <Col>
-                    <label className="no-wrap" name="crystals" htmlFor="crystals">Crystals:</label>
-                    <input className="input-sm form-control" min="0" max="999999" step="50" type="number" id="currency" value={crystals} onChange={e => setCrystals(e.target.value)}></input>
+                    <label name="crystals" htmlFor="crystals">Crystals:</label>
+                    <input className="input-sm form-control" min="0" max="999999" step="50" type="number" id="currency" value={crystals} onChange={e => setCrystals(e.target.value)} />
                 </Col>
                 <Col>
-                    <label className="no-wrap" name="singleTickets" htmlFor="singleTickets">1x tickets:</label>
-                    <input className="input-sm form-control" min="0" max="999999" type="number" id="ticket" value={singleTickets} onChange={e => setSingleTickets(e.target.value)}></input>
+                    <label name="singleTickets" htmlFor="singleTickets">1x tickets:</label>
+                    <input className="input-sm form-control" min="0" max="999999" type="number" id="ticket" value={singleTickets} onChange={e => setSingleTickets(e.target.value)} />
                 </Col>
                 <Col>
-                    <label className="no-wrap" name="multiTickets" htmlFor="multiTickets">10x tickets:</label>
-                    <input className="input-sm form-control" min="0" max="999999" type="number" id="ticket" value={multiTickets} onChange={e => setMultiTickets(e.target.value)}></input>
-                </Col>
-            </Row>
-            <Row  xs="auto" md="4" lg="3">
-                <Col>
-                    <label className="no-wrap" id="totalRolls" name="totalRolls" htmlFor="totalRolls">Total Rolls:</label>
-                    <input disabled className="input-sm form-control" min="0" max="999999" type="text" value={totalRolls + "/300"}></input>
+                    <label name="multiTickets" htmlFor="multiTickets">10x tickets:</label>
+                    <input className="input-sm form-control" min="0" max="999999" type="number" id="ticket" value={multiTickets} onChange={e => setMultiTickets(e.target.value)} />
                 </Col>
             </Row>
             <Row  xs="auto" md="4" lg="3">
                 <Col>
-                    <label className="no-wrap" name="ebifry" htmlFor="ebifry">Ebifry Count:</label>
-                    <input className="input-sm form-control" min="0" max="999" type="number" id="ebifry" value={ebifry} onChange={e => setEbifry(e.target.value)}></input>
+                    <label id="totalRolls" name="totalRolls" htmlFor="totalRolls">Total Rolls:</label>
+                    <input disabled className="input-sm form-control" min="0" max="999999" type="text" value={totalRolls + "/300"} />
+                </Col>
+            </Row>
+            <Row>Total Rolls if you use up all your Ebifry (from Premium Friday):</Row>
+            <Row  xs="auto" md="4" lg="3">
+                <Col>
+                    <label name="ebifry" htmlFor="ebifry">Ebifry Count:</label>
+                    <input className="input-sm form-control" min="0" max="999" type="number" id="ebifry" value={ebifry} onChange={e => setEbifry(e.target.value)} />
                 </Col>
                 <Col>
-                    <label className="no-wrap" id="totalWithEbifry" htmlFor="totalWithEbifry">Total Rolls (with Ebifry):</label>
-                    <input disabled className="input-sm form-control" min="0" max="999999" type="text" value={totalRolls + " + " + ebifry + " = " + totalWithEbifry + "/300"}></input>
+                    <label id="totalWithEbifry" htmlFor="totalWithEbifry">Total Rolls (with Ebifry):</label>
+                    <input disabled className="input-sm form-control" min="0" max="999999" type="text" value={totalRolls + " + " + ebifry + " = " + totalWithEbifry + "/300"} />
                 </Col>
             </Row>
         </>
