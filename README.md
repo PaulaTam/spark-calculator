@@ -6,7 +6,7 @@ This is a project to create calculators for various gacha games to track how man
 
 "Hard Pity" usually refers to the maximum number of rolls needed to get a banner/high rarity character. "Guaranteed Pity" usually refers to the amount of rolls needed to guarantee the character you want, though this is not applicable to all games.
 
-"Spark" comes from the gacha game Granblue Fantasy when they implemented a system that allowed a player to choose the character they want (from a list) after 300 rolls. This was implemented because of someone literally spending *thousands* of dollars and still failing to get the character they wanted. So thus, this method of a pity is referred as the "Spark System".
+"Spark" comes from the gacha game Granblue Fantasy when they implemented a system that allowed a player to choose the character they want (from a list) after 300 rolls. This method of a pity is referred as the "Spark System".
 
 # Roll/Pull Count
 If the game uses a pity system, the total amount of rolls would be displayed out of the hard pity count and/or guaranteed pity count if applicable. (e.g. If the hard pity count is 100, then the amount of rolls will be displayed as "xxx/100".)
