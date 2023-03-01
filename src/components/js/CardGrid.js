@@ -6,6 +6,7 @@ const CardGrid = () => {
   const cardInfo = [
     { link: "/gbf", title: "GBF calculator" },
     { link: "/genshin", title: "Genshin Calculator"},
+    { link: "/prosekai", title: "Project Sekai Calculator"},
   ];
 
   const renderCard = (card, index) => {
@@ -20,9 +21,9 @@ const CardGrid = () => {
   }
 
   return (
-    <>
+    <div class="card-grid">
       {cardInfo.map(renderCard)}
-    </>
+    </div>
     );
   
 };
