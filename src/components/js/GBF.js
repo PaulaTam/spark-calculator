@@ -1,4 +1,4 @@
-import { FullPanel } from './Tabs.js';
+import { FullPanel } from './Tabs';
 import React, { useEffect, useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
@@ -67,9 +67,9 @@ const GBFCal = () => {
 
 const GBFGuide = () => {
     return (
-        <>
+        <div id="guide">
             <p>This is a place holder for now.</p>
-        </>
+        </div>
     )
 }
 

@@ -1,4 +1,4 @@
-import { FullPanel } from './Tabs.js';
+import { FullPanel } from './Tabs';
 import React, { useEffect, useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
@@ -88,9 +88,9 @@ const GenshinCal = () => {
 
 const GenshinGuide = () => {
     return (
-        <>
+        <div id="guide">
             <p>This is a placeholder!</p>
-        </>
+        </div>
     )
 }
 
