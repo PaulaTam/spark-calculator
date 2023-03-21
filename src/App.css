@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: hsla(0, 100%, 90%, 0.3);
+}
+
+#items > .row { /*row items*/
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#items > .row#extra { /*extra rows that just have text*/
+  justify-content: center;
+}

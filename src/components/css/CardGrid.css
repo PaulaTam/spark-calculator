@@ -1,0 +1,9 @@
+.card {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.card-grid {
+    display: flex;
+    gap: 1fr;
+}
