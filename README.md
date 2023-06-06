@@ -24,10 +24,10 @@ Any currency/rolls gained from other sources (e.g. Maintenance Compensation, IRL
 As I definitely don't know every single gacha game out there, this project will start off with calculators for Granblue Fantasy, Genshin Impact, and Project Sekai (EN). (These are some of the games I currently play and also need a calculator for, so I will prioritize them.)
 
 Other games that may be implemented in the future:
-Ensemble Stars (JP)
-Tears of Themis (EN)
-Cookie Run Kingdom (EN)
-Arknights (EN)
+- Ensemble Stars (JP)
+- Tears of Themis (EN)
+- Cookie Run Kingdom (EN)
+- Arknights (EN)
 
 # Updates
 
