@@ -1,13 +1,15 @@
-import '../css/CardGrid.css';
 import { Card } from 'react-bootstrap';
+import '../css/CardGrid.css';
+import '../css/Backgrounds.css';
+import { thumbnails } from "../../images/index.js";
+
+export const cardInfo = [
+  { name: "Granblue Fantasy", link: "/gbf", title: "GBF calculator", img: thumbnails.gbf_img},
+  { name: "Genshin Impact", link: "/genshin", title: "Genshin Calculator", img: thumbnails.genshin_img},
+  { name: "Project Sekai", link: "/prosekai", title: "Project Sekai Calculator", img: thumbnails.pjsekai_img},
+];
 
 const CardGrid = () => {
-
-  const cardInfo = [
-    { link: "/gbf", title: "GBF calculator", img: "../images/wall_of_crystals.png"},
-    { link: "/genshin", title: "Genshin Calculator", img: "../images/genshin-wish.png"},
-    { link: "/prosekai", title: "Project Sekai Calculator", img: "../images/pjsekai-crystals.png"},
-  ];
 
   const renderCard = (card, index) => {
     return (
