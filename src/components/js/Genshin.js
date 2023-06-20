@@ -1,6 +1,7 @@
 import { FullPanel } from './Tabs';
 import React, { useEffect, useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
+import '../css/Backgrounds.css';
 
 const GenshinCal = () => {
     //setting primos, genesis crystals, and fates
@@ -61,6 +62,7 @@ const GenshinCal = () => {
                     <input disabled className="input-sm form-control" min="0" max="999999" type="text" value={totalRolls + "/90"} />
                 </Col>
             </Row>
+            <hr />
             <Row id="extra">Total Rolls if you use up all your Stardust + Starglitter:</Row>
             <Row xs="auto" md="4" lg="3">
                 <Col>
@@ -89,12 +91,44 @@ const GenshinCal = () => {
 const GenshinGuide = () => {
     return (
         <div id="guide">
-            <p>This is a placeholder!</p>
+            <br />
+            <h3>Intro</h3>
+            <hr />
+            <p>This guide will focus on F2P {"(free to play)"} methods to obtaining primogems and fates.</p>
+            <h4>Dailies</h4>
+            <hr />
+            <p>10 per daily quest.</p>
+            <p>20 when turning in the 4 daily quests to any Katherine.</p>
+            <p>Total 60 possible primogems per day.</p>
+            <h4>Chests</h4>
+            <hr />
+            <p>There are 4 tiers of chests in Genshin, and they each give a different amount of primogems when opened.</p>
+            <ul>
+                <li>Common Chests: Gives about 0-2 primogems per chest.</li>
+                <li>Exquisite Chests: Gives about 2-5 primogems per chest.</li>
+                <li>Precious Chests: Gives about 5-10 primogems per chest.</li>
+                <li>Luxurious Chests: Gives 10 primogems per chest.</li>
+            </ul>
+            <h4>Shrine of Depths</h4>
+            <hr />
+            <p>Each Shrine of Depth has a chest inside that gives 40 primogems.</p>
+            <h4>Spiral Abyss</h4>
+            <hr />
+            <h4>Events</h4>
+            <hr />
+            <h4>First Time Tutorials</h4>
+            <hr />
+            <p>1 primogem when you view new tutorial.</p>
         </div>
     )
 }
 
 const Genshin = () => {
+
+    useEffect(() => {
+        document.body.classList.add('genshin_bg');
+    }, []);
+
     return (
         <FullPanel
             calculator={ <GenshinCal /> }

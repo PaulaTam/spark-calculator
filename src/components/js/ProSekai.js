@@ -1,6 +1,7 @@
 import { FullPanel } from './Tabs';
 import React, { useEffect, useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
+import '../css/Backgrounds.css';
 
 const ProSekaiCal = () => {
     //setting crystals and paidCrystals
@@ -22,7 +23,7 @@ const ProSekaiCal = () => {
 
     useEffect(() => {
         const total = (parseInt(totalRolls, 10) + 
-            Math.min(Math.max((parseInt(stickers, 10)), 0), 10)
+            Math.min(Math.max((parseInt(stickers, 10)), 0), 10)*10
         );
         setTotalWithStickers(total.toString());
     }, [totalRolls, stickers])
@@ -46,6 +47,7 @@ const ProSekaiCal = () => {
                     <input disabled className="input-sm form-control" min="0" max="999999" type="text" value={totalRolls + "/300"} />
                 </Col>
             </Row>
+            <hr />
             <Row id="extra">Total Rolls + Stickers (Max 10 stickers):</Row>
             <Row  xs="auto" md="4" lg="3">
                 <Col>
@@ -67,13 +69,37 @@ const ProSekaiGuide = () => {
     return (
         <>
         <div id="guide">
-            <p>This is a placeholder!</p>
+            <br />
+            <h3>Intro</h3>
+            <hr />
+            <h4>Login</h4>
+            <hr />
+            <h4>Conversations</h4>
+            <hr />
+            <p>10 crystals per new conversation.</p>
+            <h4>Challenge Shows</h4>
+            <hr />
+            <h4>Song Rewards</h4>
+            <hr />
+            <h4>Events</h4>
+            <hr />
+            <p>Each event will have an story, trade and aftershow.</p>
+            <p>Story: usually 8 episodes, 50 crystals per episode.</p>
+            <p>Trade: 1000 points for 100 crystals, 300 crystals total.</p>
+            <p>Aftershow: 300 crystals if you watch the whole aftershow.</p>
+            <h4>Monthly</h4>
+            <hr />
         </div>
         </>
     )
 }
 
 const ProSekai = () => {
+
+    useEffect(() => {
+        document.body.classList.add('pjsekai_bg');
+    }, []);
+
     return (
         <FullPanel
             calculator={ <ProSekaiCal /> }
