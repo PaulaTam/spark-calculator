@@ -12,3 +12,12 @@ export const FullPanel = (props) => {
         </Tabs>
     )
 }
+
+/* //work in progress!
+export const SidebarNav = (props) => {
+    return (
+        <>
+        </>
+    )
+}
+*/
