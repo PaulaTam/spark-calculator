@@ -1,0 +1,28 @@
+.about_bg {
+    background:  rgba(41,84,227,1);
+    background: linear-gradient(0deg,  rgba(41,84,227,1) 0%,rgba(115,243,245,1) 100%);
+}
+
+.gbf_bg {
+    background-image: url(../../images/backgrounds/gbf_bg.jpeg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.genshin_bg {
+    background-image: url(../../images/backgrounds/genshin_bg.jpeg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pjsekai_bg {
+    background-image: url(../../images/backgrounds/pjsekai_bg.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

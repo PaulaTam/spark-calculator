@@ -2,11 +2,15 @@
   text-align: center;
 }
 
+body {
+  height: 100%;
+}
+
 .container {
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 1rem;
   border-radius: 5px;
-  background-color: hsla(0, 100%, 90%, 0.3);
+  background-color: hsla(0, 0%, 98%, 0.701);
 }
 
 #items > .row { /*row items*/
