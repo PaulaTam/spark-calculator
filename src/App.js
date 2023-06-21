@@ -5,6 +5,8 @@ import CardGrid  from './components/js/CardGrid';
 import { TopNavBar } from './components/js/TopNavBar';
 import About from './components/js/About';
 
+import WIPAlert from './components/js/TempAlert';
+
 //all calculator imports here
 import GBF from './components/js/GBF';
 import Genshin from './components/js/Genshin';
@@ -25,6 +27,7 @@ function App() {
           </Routes>
         </Router>
         </Container>
+      <WIPAlert />
     </div>
   );
 }

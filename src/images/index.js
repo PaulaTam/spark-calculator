@@ -4,6 +4,7 @@ import pjsekai_img from "./thumbnails/pjsekai_thumb.png";
 
 //gbf images
 import fate_ep_ex from "./gbf_images/fate_ep_example.png";
+import coop_tix1 from "./gbf_images/coop_tix1.png";
 
 export const thumbnails = {
     gbf_img,
@@ -13,4 +14,5 @@ export const thumbnails = {
 
 export const gbfImgs = {
     fate_ep_ex,
+    coop_tix1,
 };
