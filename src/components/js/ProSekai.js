@@ -97,6 +97,7 @@ const ProSekaiGuide = () => {
 const ProSekai = () => {
 
     useEffect(() => {
+        document.body.className = "";
         document.body.classList.add('pjsekai_bg');
     }, []);
 

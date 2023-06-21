@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import React from 'react'; //, { useState } from 'react';
+import { Link } from 'react-router-dom';
 //import { cardInfo } from './CardGrid.js';
 
 /*
@@ -35,9 +36,9 @@ export const TopNavBar = () => {
     return (
         <Navbar bg="light" data-bs-theme="light">
             <Container fluid>
-                <Navbar.Brand href="/">Home</Navbar.Brand>
+                <Navbar.Brand as={ Link } to="/">Home</Navbar.Brand>
                 <Nav>
-                    <Nav.Link href="/about">About</Nav.Link>
+                    <Nav.Link as={ Link } to="/about">About</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>

@@ -1,5 +1,5 @@
 import './App.css';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import CardGrid  from './components/js/CardGrid';
 import { TopNavBar } from './components/js/TopNavBar';
@@ -13,21 +13,22 @@ import Genshin from './components/js/Genshin';
 import ProSekai from './components/js/ProSekai';
 
 function App() {
+  
   return (
     <div className="App">
+      <BrowserRouter basename="/spark-calculator">
       <TopNavBar />
         <Container>
-        <Router>
           <Routes>
-            <Route exact path="/" element={<CardGrid />} />
+            <Route path="/" element={<CardGrid />} />
             <Route path="/about" element={<About />} />
-            <Route exact path="/gbf" element={<GBF />} />
-            <Route exact path="/genshin" element={<Genshin />} />
-            <Route exact path="/prosekai" element={<ProSekai />} />
+            <Route path="/gbf" element={<GBF />} />
+            <Route path="/genshin" element={<Genshin />} />
+            <Route path="/prosekai" element={<ProSekai />} />
           </Routes>
-        </Router>
         </Container>
       <WIPAlert />
+      </BrowserRouter>
     </div>
   );
 }
