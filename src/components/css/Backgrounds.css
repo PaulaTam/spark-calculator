@@ -5,7 +5,8 @@
 
 .gbf_bg {
     background-image: url(../../images/backgrounds/gbf_bg.jpeg);
-    background-position: center;
+    background-position: top;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
