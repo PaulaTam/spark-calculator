@@ -124,6 +124,7 @@ const GBFGuide = () => {
 const GBF = () => {
 
     useEffect(() => {
+        document.body.className = "";
         document.body.classList.add('gbf_bg');
     }, []);
 

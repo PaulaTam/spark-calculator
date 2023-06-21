@@ -126,6 +126,7 @@ const GenshinGuide = () => {
 const Genshin = () => {
 
     useEffect(() => {
+        document.body.className = "";
         document.body.classList.add('genshin_bg');
     }, []);
 

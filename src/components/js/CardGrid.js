@@ -1,7 +1,9 @@
 import { Card } from 'react-bootstrap';
+import { useEffect } from 'react';
 import '../css/CardGrid.css';
 import '../css/Backgrounds.css';
 import { thumbnails } from "../../images/index.js";
+import { Link } from 'react-router-dom';
 
 export const cardInfo = [
   { name: "Granblue Fantasy", link: "/gbf", title: "GBF calculator", img: thumbnails.gbf_img},
@@ -18,12 +20,17 @@ const CardGrid = () => {
         <Card.ImgOverlay>
         <Card.Body>
           <Card.Title>{card.title}</Card.Title>
-          <Card.Link href={card.link}>Click Here</Card.Link>
+          <Link to={card.link}>Click Here</Link>
         </Card.Body>
         </Card.ImgOverlay>
       </Card>
     )
   }
+
+  useEffect(() => {
+    document.body.className = "";
+    document.body.classList.add('card_grid_bg');
+}, []);
 
   return (
     <div class="card-grid">
