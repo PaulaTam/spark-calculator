@@ -19,8 +19,9 @@ const CardGrid = () => {
         <Card.Img src={card.img} alt="Card image" style={{opacity: .75}} />
         <Card.ImgOverlay>
         <Card.Body>
-          <Card.Title>{card.title}</Card.Title>
-          <Link to={card.link}>Click Here</Link>
+          <Card.Title>
+            <Link class="title" to={card.link}>{card.title}</Link>
+          </Card.Title>
         </Card.Body>
         </Card.ImgOverlay>
       </Card>
