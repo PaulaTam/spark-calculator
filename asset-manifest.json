@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/spark-calculator/static/css/main.2e3cc310.css",
-    "main.js": "/spark-calculator/static/js/main.1985ac14.js",
+    "main.css": "/spark-calculator/static/css/main.a735c4b7.css",
+    "main.js": "/spark-calculator/static/js/main.5674b68b.js",
     "static/js/787.ee446eca.chunk.js": "/spark-calculator/static/js/787.ee446eca.chunk.js",
     "static/media/gbf_bg.jpeg": "/spark-calculator/static/media/gbf_bg.e636f6f5d26d3bd88056.jpeg",
     "static/media/fate_ep_example.png": "/spark-calculator/static/media/fate_ep_example.bd066ec9413e2ae2184a.png",
@@ -12,12 +12,12 @@
     "static/media/genshin_bg.jpeg": "/spark-calculator/static/media/genshin_bg.18005e5d2cbfe39cfdd1.jpeg",
     "static/media/pjsekai_bg.png": "/spark-calculator/static/media/pjsekai_bg.7202c2882739053733db.png",
     "index.html": "/spark-calculator/index.html",
-    "main.2e3cc310.css.map": "/spark-calculator/static/css/main.2e3cc310.css.map",
-    "main.1985ac14.js.map": "/spark-calculator/static/js/main.1985ac14.js.map",
+    "main.a735c4b7.css.map": "/spark-calculator/static/css/main.a735c4b7.css.map",
+    "main.5674b68b.js.map": "/spark-calculator/static/js/main.5674b68b.js.map",
     "787.ee446eca.chunk.js.map": "/spark-calculator/static/js/787.ee446eca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e3cc310.css",
-    "static/js/main.1985ac14.js"
+    "static/css/main.a735c4b7.css",
+    "static/js/main.5674b68b.js"
   ]
 }
