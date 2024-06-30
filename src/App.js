@@ -11,6 +11,7 @@ import WIPAlert from './components/js/TempAlert';
 import GBF from './components/js/GBF';
 import Genshin from './components/js/Genshin';
 import ProSekai from './components/js/ProSekai';
+import HSR from './components/js/HSR';
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
       <BrowserRouter basename="/spark-calculator">
       <TopNavBar />
+      <WIPAlert />
         <Container>
           <Routes>
             <Route path="/" element={<CardGrid />} />
@@ -25,9 +27,9 @@ function App() {
             <Route path="/gbf" element={<GBF />} />
             <Route path="/genshin" element={<Genshin />} />
             <Route path="/prosekai" element={<ProSekai />} />
+            <Route path="/hsr" element={<HSR />} />
           </Routes>
         </Container>
-      <WIPAlert />
       </BrowserRouter>
     </div>
   );
