@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect } from '../index.js';
 import '../css/Backgrounds.css';
 
 const About = () => {
