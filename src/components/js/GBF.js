@@ -1,6 +1,4 @@
-import { FullPanel } from './Tabs';
-import React, { useEffect, useState } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { FullPanel, React, useEffect, useState, Row, Col } from '../index.js';
 import '../css/Backgrounds.css';
 import { gbfImgs } from '../../images/index.js';
 
@@ -50,6 +48,7 @@ const GBFCal = () => {
                 <Col>
                     <label id="totalRolls" name="totalRolls" htmlFor="totalRolls">Total Rolls:</label>
                     <input disabled className="input-sm form-control" min="0" max="999999" type="text" value={totalRolls + "/300"} />
+                    { totalRolls >= 300 ? <p>Hooray! You have a full spark!</p> : <p>Sadge... you don't have a full spark...</p> }
                 </Col>
             </Row>
             <hr />
@@ -62,6 +61,7 @@ const GBFCal = () => {
                 <Col>
                     <label id="totalWithEbifry" htmlFor="totalWithEbifry">Total Rolls (with Ebifry):</label>
                     <input disabled className="input-sm form-control" min="0" max="999999" type="text" value={totalRolls + " + " + ebifry + " = " + totalWithEbifry + "/300"} />
+                    { totalWithEbifry >= 300 ? <p>Go for the spark!</p> : <p>Hmm... you might as well save...</p> }
                 </Col>
             </Row>
         </div>

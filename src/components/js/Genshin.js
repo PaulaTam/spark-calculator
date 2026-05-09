@@ -1,6 +1,4 @@
-import { FullPanel } from './Tabs';
-import React, { useEffect, useState } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { FullPanel, React, useEffect, useState, Row, Col } from '../index.js';
 import '../css/Backgrounds.css';
 
 const GenshinCal = () => {

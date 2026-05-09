@@ -1,5 +1,4 @@
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import React from 'react'; //, { useState } from 'react';
+import {React, Navbar, Nav, Container } from '../index.js';
 import { Link } from 'react-router-dom';
 //import { cardInfo } from './CardGrid.js';
 

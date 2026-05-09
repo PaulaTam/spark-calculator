@@ -1,5 +1,4 @@
-import { Card } from 'react-bootstrap';
-import { useEffect } from 'react';
+import { useEffect, Card } from '../index.js';
 import '../css/CardGrid.css';
 import '../css/Backgrounds.css';
 import { thumbnails } from "../../images/index.js";
